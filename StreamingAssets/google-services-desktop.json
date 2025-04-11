@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "258169559777",
+    "firebase_url": "https://codiplay-3c0cc-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "codiplay-3c0cc",
+    "storage_bucket": "codiplay-3c0cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258169559777:android:062bf9c84266ec351d35a0",
+        "android_client_info": {
+          "package_name": "com.codiplay.codiplay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258169559777-jij6rhmspvrdiprdaf0la3fkauir19m6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkuf5zY_o0DkjPYh9-NNRgnUqvWhOzfAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258169559777-jij6rhmspvrdiprdaf0la3fkauir19m6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "258169559777-nn5jgt8ar5mtlu4eql6t1g6lc0fqs4la.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.codiplay.codiplay"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
