@@ -350,7 +350,6 @@
     <type fullname="UltrasonicSensorEcho" preserve="all" />
     <type fullname="UltrasonicSensorTrig" preserve="all" />
     <type fullname="UrlList" preserve="all" />
-    <type fullname="UserManager" preserve="all" />
     <type fullname="VerticalDraggable" preserve="all" />
     <type fullname="VideoActivator" preserve="all" />
     <type fullname="WaterAnimation" preserve="all" />

@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Web.loader.js";
+      var loaderUrl = buildUrl + "/Builds.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Web.data",
-        frameworkUrl: buildUrl + "/Web.framework.js",
-        codeUrl: buildUrl + "/Web.wasm",
+        dataUrl: buildUrl + "/Builds.data",
+        frameworkUrl: buildUrl + "/Builds.framework.js",
+        codeUrl: buildUrl + "/Builds.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "CodiPlay",
         productName: "CodiPlay",
@@ -94,7 +94,7 @@
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
         canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.height = "550px";
       }
 
       loadingBar.style.display = "block";
@@ -104,28 +104,12 @@
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
-        }).then((unityInstance) => {
+        }).then((unityInstance) => {          
+          unityInstanceGlobal = unityInstance;
           loadingBar.style.display = "none";
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
           };
-          // Make unityInstance globally accessible
-          window.unityInstance = unityInstance;
-
-          // Function to send 3 int arguments to Unity
-          window.sendToUnity = function(arg1, arg2, arg3) {
-            if (!unityInstance) {
-              console.error("Unity instance is not ready");
-              return;
-            }
-
-            // Convert to a string format Unity can parse, like "arg1,arg2,arg3"
-            const message = `${arg1},${arg2},${arg3}`;
-
-            // Send the message to the GameObject and method of your choice
-            unityInstance.SendMessage("AppInitializer", "ReceiveFromJS", message);
-          };
-
         }).catch((message) => {
           alert(message);
         });
@@ -133,9 +117,23 @@
       document.body.appendChild(script);
     </script>
   
-    <div style="text-align:center; margin-top: 20px;">
-      <button onclick="sendToUnity(0, 2, 0)">Send Message to Unity</button>
-    </div>
+<!-- Add below the Unity container -->
+<div style="margin-top: 20px; text-align: center;">
+  <button onclick="sendToUnity('LoadLed')" style="padding: 10px 20px;">Led</button>
+  <button onclick="sendToUnity('LoadTraffic')" style="padding: 10px 20px;">Traffic Light</button>
+</div>
 
-  </body>
+<script>
+  let unityInstanceGlobal = null;
+
+  function sendToUnity(methodName) {
+    if (unityInstanceGlobal) {
+      unityInstanceGlobal.SendMessage("AppInitializer", methodName, "");
+    } else {
+      console.warn("Unity instance not yet initialized.");
+    }
+  }
+</script>
+
+</body>
 </html>
