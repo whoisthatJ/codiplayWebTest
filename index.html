@@ -126,9 +126,10 @@
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
           };
+          const actionUrl = new URLSearchParams(window.location.search).get('action');
           console.log("Check Unity");
-          console.log(actionString);          
-          if(actionString == 'led')
+          console.log(actionUrl);          
+          if(actionUrl == 'led')
             sendToUnity('LoadLed');
           else
             sendToUnity('LoadTraffic');
