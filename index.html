@@ -42,9 +42,12 @@
 
     function callUnityFromURL() {
         const action = getQueryParam('action');
+        console.log(action);
         if (action) {
             // Example: Call a GameObject named "GameManager", with method "DoAction"
             actionString = action;
+            console.log(action);
+            console.log(actionString);
         }
     }
       function unityShowBanner(msg, type) {
@@ -122,7 +125,9 @@
           loadingBar.style.display = "none";
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
-          };          
+          };
+          console.log("Check Unity");
+          console.log(actionString);          
           if(actionString == 'led')
             sendToUnity('LoadLed');
           else
