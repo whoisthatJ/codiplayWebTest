@@ -129,10 +129,7 @@
           const actionUrl = new URLSearchParams(window.location.search).get('action');
           console.log("Check Unity");
           console.log(actionUrl);          
-          if(actionUrl == 'led')
-            sendToUnity('LoadLed');
-          else
-            sendToUnity('LoadTraffic');
+          sendToUnity('LoadActivity', actionUrl);
         }).catch((message) => {
           alert(message);
         });
@@ -141,17 +138,17 @@
     </script>
   
 <!-- Add below the Unity container -->
-<div style="margin-top: 20px; text-align: center;">
+<!--<div style="margin-top: 20px; text-align: center;">
   <button onclick="sendToUnity('LoadLed')" style="padding: 10px 20px;">Led</button>
   <button onclick="sendToUnity('LoadTraffic')" style="padding: 10px 20px;">Traffic Light</button>
 </div>
-
+-->
 <script>
   let unityInstanceGlobal = null;
 
-  function sendToUnity(methodName) {
+  function sendToUnity(methodName, parameter) {
     if (unityInstanceGlobal) {
-      unityInstanceGlobal.SendMessage("AppInitializer", methodName, "");
+      unityInstanceGlobal.SendMessage("AppInitializer", methodName, parameter);
     } else {
       console.warn("Unity instance not yet initialized.");
     }
