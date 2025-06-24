@@ -324,7 +324,6 @@
       {
         console.log("Check Unity");
         console.log(actionUrl);          
-        sendToUnity('LoadActivity', actionUrl);
         unityInstance.SendMessage("DemoController", "LoadActivity", actionUrl);
       }
     }).catch((message) => {
