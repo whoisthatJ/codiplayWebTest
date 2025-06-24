@@ -14,9 +14,6 @@
   <assembly fullname="LeanTouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Lean.Touch.LeanTouch" preserve="all" />
   </assembly>
-  <assembly fullname="LeTai.TranslucentImage, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="LeTai.Asset.TranslucentImage.TranslucentImageSource" preserve="all" />
-  </assembly>
   <assembly fullname="LeTai.TrueShadow, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="LeTai.TrueShadow.TrueShadow" preserve="all" />
   </assembly>
@@ -31,10 +28,7 @@
     <type fullname="AppStatus" preserve="all" />
     <type fullname="AudioBase.AudioContainer" preserve="all" />
     <type fullname="ButtonScrollExtension" preserve="all" />
-    <type fullname="CdsSource" preserve="all" />
-    <type fullname="CertificationCard" preserve="all" />
     <type fullname="CodeUploader" preserve="all" />
-    <type fullname="CodikitPractice" preserve="all" />
     <type fullname="CodingMissionCard" preserve="all" />
     <type fullname="CodingMissionScrollRect" preserve="all" />
     <type fullname="ColorPreset" preserve="all" />
@@ -57,9 +51,7 @@
     <type fullname="Controller_CodingSimulation" preserve="all" />
     <type fullname="Controller_CustomerService" preserve="all" />
     <type fullname="Controller_Laboratory" preserve="all" />
-    <type fullname="Controller_LearningCourse" preserve="all" />
     <type fullname="Controller_LearningCourseDone" preserve="all" />
-    <type fullname="Controller_LearningStepContents" preserve="all" />
     <type fullname="Controller_Loading" preserve="all" />
     <type fullname="Controller_LobbyStart" preserve="all" />
     <type fullname="Controller_MyPage" preserve="all" />
@@ -72,7 +64,6 @@
     <type fullname="Controller_SerialMonitor" preserve="all" />
     <type fullname="Controller_Setting" preserve="all" />
     <type fullname="Controller_Terms" preserve="all" />
-    <type fullname="Controller_Theory" preserve="all" />
     <type fullname="Controller_Toast" preserve="all" />
     <type fullname="Controller_TwoBtnDefault" preserve="all" />
     <type fullname="Controller_TwoBtnFinish" preserve="all" />
@@ -82,18 +73,9 @@
     <type fullname="ExpansionToggle" preserve="all" />
     <type fullname="GrayScale" preserve="all" />
     <type fullname="IFrameManager" preserve="all" />
-    <type fullname="ImageRotater" preserve="all" />
     <type fullname="InputSourceContainer" preserve="all" />
-    <type fullname="Joystick" preserve="all" />
-    <type fullname="JoystickSource" preserve="all" />
-    <type fullname="KnobSource" preserve="all" />
     <type fullname="LcdCharacter" preserve="all" />
-    <type fullname="LearningCourse.Common.CircuitAssemble" preserve="all" />
-    <type fullname="LearningCourse.Common.CodingSimulation" preserve="all" />
-    <type fullname="LearningCourse.Common.LearningCourse" preserve="all" />
-    <type fullname="LearningCourse.Common.LearningStep" preserve="all" />
     <type fullname="LearningStepCard" preserve="all" />
-    <type fullname="LearningStepContentCard" preserve="all" />
     <type fullname="LoadingCircle" preserve="all" />
     <type fullname="MAKE.Common.UI.FrameData" preserve="all" />
     <type fullname="MakeKitCodingMissionCard" preserve="all" />
@@ -105,14 +87,11 @@
     <type fullname="Model_CircuitAssemble" preserve="all" />
     <type fullname="Model_CodingMission" preserve="all" />
     <type fullname="Model_CodingSimulation" preserve="all" />
-    <type fullname="Model_LearningCourse" preserve="all" />
     <type fullname="Model_LearningCourseDone" preserve="all" />
-    <type fullname="Model_LearningStepContents" preserve="all" />
     <type fullname="Model_LobbyStart" preserve="all" />
     <type fullname="Model_MyPage" preserve="all" />
     <type fullname="Model_PartsDetailView" preserve="all" />
     <type fullname="Model_Terms" preserve="all" />
-    <type fullname="Model_Theory" preserve="all" />
     <type fullname="Model_Toast" preserve="all" />
     <type fullname="Model_TwoBtnTextInput" preserve="all" />
     <type fullname="MoveTarget_Fingers" preserve="all" />
@@ -127,9 +106,7 @@
     <type fullname="Page_CodingSimulation" preserve="all" />
     <type fullname="Page_CustomerService" preserve="all" />
     <type fullname="Page_Laboratory" preserve="all" />
-    <type fullname="Page_LearningCourse" preserve="all" />
     <type fullname="Page_LearningCourseDone" preserve="all" />
-    <type fullname="Page_LearningStepContents" preserve="all" />
     <type fullname="Page_LobbyStart" preserve="all" />
     <type fullname="Page_MyPage" preserve="all" />
     <type fullname="Page_PartsDetailView" preserve="all" />
@@ -137,7 +114,6 @@
     <type fullname="Page_Scratch" preserve="all" />
     <type fullname="Page_SerialMonitor" preserve="all" />
     <type fullname="Page_Setting" preserve="all" />
-    <type fullname="Page_Theory" preserve="all" />
     <type fullname="Page_WiFiUpload" preserve="all" />
     <type fullname="PinIndicator" preserve="all" />
     <type fullname="PinSetter" preserve="all" />
@@ -158,7 +134,6 @@
     <type fullname="Popup_TwoBtnDefault" preserve="all" />
     <type fullname="Popup_TwoBtnFinish" preserve="all" />
     <type fullname="Popup_TwoBtnTextInput" preserve="all" />
-    <type fullname="Potentiometer" preserve="all" />
     <type fullname="PracticeCard" preserve="all" />
     <type fullname="PracticeGroupCard" preserve="all" />
     <type fullname="SendClickEventLog" preserve="all" />
@@ -168,36 +143,16 @@
     <type fullname="Simulation.Bluetooth" preserve="all" />
     <type fullname="Simulation.BluetoothSource" preserve="all" />
     <type fullname="Simulation.ButtonSource" preserve="all" />
-    <type fullname="Simulation.DhtSensor" preserve="all" />
     <type fullname="Simulation.DigitalPin" preserve="all" />
-    <type fullname="Simulation.DotMatrix" preserve="all" />
-    <type fullname="Simulation.DotMatrixLed" preserve="all" />
-    <type fullname="Simulation.IrSensor" preserve="all" />
-    <type fullname="Simulation.IrSource" preserve="all" />
-    <type fullname="Simulation.Joystick" preserve="all" />
-    <type fullname="Simulation.JoystickAxis" preserve="all" />
     <type fullname="Simulation.Lcd" preserve="all" />
     <type fullname="Simulation.Led" preserve="all" />
-    <type fullname="Simulation.MotorDriver" preserve="all" />
-    <type fullname="Simulation.NeoPixel" preserve="all" />
-    <type fullname="Simulation.NeoPixelLed" preserve="all" />
-    <type fullname="Simulation.PhotoresistorSensor" preserve="all" />
     <type fullname="Simulation.PiezoBuzzer" preserve="all" />
-    <type fullname="Simulation.PwmPin" preserve="all" />
     <type fullname="Simulation.RgbLed" preserve="all" />
     <type fullname="Simulation.RgbLedPin" preserve="all" />
-    <type fullname="Simulation.ServoMotor" preserve="all" />
     <type fullname="Simulation.SliderSource" preserve="all" />
-    <type fullname="Simulation.SoilMoistureSensor" preserve="all" />
-    <type fullname="Simulation.SoundSensor" preserve="all" />
-    <type fullname="Simulation.SoundSource" preserve="all" />
     <type fullname="Simulation.TactSwitch" preserve="all" />
-    <type fullname="Simulation.TiltSensor" preserve="all" />
     <type fullname="Simulation.UltrasonicSensor" preserve="all" />
-    <type fullname="Simulation.WaterLevelSensor" preserve="all" />
-    <type fullname="TiltSource" preserve="all" />
     <type fullname="TmproHyperLink" preserve="all" />
-    <type fullname="ToggleTabJoystickController" preserve="all" />
     <type fullname="Typography" preserve="all" />
     <type fullname="UiClickTutorial" preserve="all" />
     <type fullname="UiClickTutorialModule" preserve="all" />
@@ -210,10 +165,6 @@
     <type fullname="UiClickTutorial/TutorialList" preserve="nothing" serialized="true" />
     <type fullname="GuideCard" preserve="nothing" serialized="true" />
     <type fullname="GuideWiFiCard" preserve="nothing" serialized="true" />
-    <type fullname="LearningCourse.Common.CircuitStep" preserve="nothing" serialized="true" />
-    <type fullname="LearningCourse.Common.Missions" preserve="nothing" serialized="true" />
-    <type fullname="LearningCourse.Common.Parts" preserve="nothing" serialized="true" />
-    <type fullname="LearningCourse.Common.WiringInfo" preserve="nothing" serialized="true" />
     <type fullname="Simulation.AnalogModulePair" preserve="nothing" serialized="true" />
     <type fullname="UiClickTutorialModule/TutorialList" preserve="nothing" serialized="true" />
     <type fullname="AudioBase.SerializableDictionary`2[AudioManager/BGM_TYPE,System.String]" preserve="nothing" serialized="true" />
@@ -288,12 +239,9 @@
   <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Camera" preserve="all" />
     <type fullname="UnityEngine.Cubemap" preserve="all" />
-    <type fullname="UnityEngine.FlareLayer" preserve="all" />
     <type fullname="UnityEngine.GameObject" preserve="all" />
     <type fullname="UnityEngine.Light" preserve="all" />
-    <type fullname="UnityEngine.LightingSettings" preserve="all" />
     <type fullname="UnityEngine.LightmapSettings" preserve="all" />
-    <type fullname="UnityEngine.LightProbes" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
     <type fullname="UnityEngine.Mesh" preserve="all" />
     <type fullname="UnityEngine.MeshFilter" preserve="all" />
@@ -301,7 +249,6 @@
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.RenderSettings" preserve="all" />
-    <type fullname="UnityEngine.RenderTexture" preserve="all" />
     <type fullname="UnityEngine.Shader" preserve="all" />
     <type fullname="UnityEngine.Sprite" preserve="all" />
     <type fullname="UnityEngine.TextAsset" preserve="all" />
@@ -327,7 +274,6 @@
     <type fullname="UnityEngine.EventSystems.PhysicsRaycaster" preserve="all" />
     <type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="all" />
     <type fullname="UnityEngine.UI.AspectRatioFitter" preserve="all" />
-    <type fullname="UnityEngine.UI.Button" preserve="all" />
     <type fullname="UnityEngine.UI.CanvasScaler" preserve="all" />
     <type fullname="UnityEngine.UI.ContentSizeFitter" preserve="all" />
     <type fullname="UnityEngine.UI.GraphicRaycaster" preserve="all" />
@@ -336,7 +282,6 @@
     <type fullname="UnityEngine.UI.Image" preserve="all" />
     <type fullname="UnityEngine.UI.LayoutElement" preserve="all" />
     <type fullname="UnityEngine.UI.Mask" preserve="all" />
-    <type fullname="UnityEngine.UI.RawImage" preserve="all" />
     <type fullname="UnityEngine.UI.RectMask2D" preserve="all" />
     <type fullname="UnityEngine.UI.Scrollbar" preserve="all" />
     <type fullname="UnityEngine.UI.ScrollRect" preserve="all" />
@@ -354,16 +299,12 @@
     <type fullname="UnityEngine.UI.Slider/SliderEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Toggle/ToggleEvent" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Scrollbar/ScrollEvent" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Canvas" preserve="all" />
     <type fullname="UnityEngine.CanvasGroup" preserve="all" />
     <type fullname="UnityEngine.CanvasRenderer" preserve="all" />
-  </assembly>
-  <assembly fullname="UnityEngine.VideoModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="UnityEngine.Video.VideoPlayer" preserve="all" />
   </assembly>
   <assembly fullname="unity-ui-extensions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.UI.Extensions.Gradient" preserve="all" />
